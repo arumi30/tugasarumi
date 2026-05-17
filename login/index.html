@@ -27,15 +27,17 @@
                 <p>Login to your account</p>
             </div>
             
-            <form action="#" class="login" id="loginForm">
-                <div class="field">
-                    <input type="text" id="username" placeholder="username">
-                </div>
-                <div class="field">
-                    <input type="password" id="password" placeholder="password">
-                </div>
-
-                <div class="form-group">
+            <form class="login-form" id="loginForm" novalidate>
+              <div class="form-group">
+                  <div class="input-wrapper">
+                    <input type="text" id="username" name="username" required autocomplete="username">
+                    <label for="username">Username</label>
+                    <span class="focus-border"></span>
+                 </div>
+                 <span class="error-message" id="usernameError"></span>
+              </div>      
+                
+              <div class="form-group">
                     <div class="input-wrapper password-wrapper">
                         <input type="password" id="password" name="password" required autocomplete="current-password">
                         <label for="password">Password</label>
