@@ -601,7 +601,13 @@ body {
         scroll-behavior: auto !important;
     }
 }
-
+.alert{
+    background: #e44e4e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
 #message{
     background: #ff4e4e;
     color: white;
